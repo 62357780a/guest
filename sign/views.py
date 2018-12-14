@@ -8,7 +8,7 @@ def index(request):
 
 #登录动作
 def login_action(request):
-    if request.method == 'post':
+    if request.method == 'POST':
         username = request.POST.get('username','')
         password = request.POST.get('password','')
         if username == 'admin' and password == 'admin123':
